@@ -1,0 +1,23 @@
+{
+  "name": "storybook-storyshots-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "David Golightly <david.golightly@leapyear.io>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@storybook/addon-info": "^5.3.12",
+    "@storybook/addon-storyshots": "^5.3.12",
+    "@storybook/react": "^5.3.12",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/storybook__addon-info": "^5.2.1",
+    "@types/storybook__addon-storyshots": "^5.3.1",
+    "babel-loader": "^8.0.6",
+    "jest": "^25.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.7.5"
+  }
+}
