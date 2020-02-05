@@ -4,16 +4,9 @@ const tsconfig = require('./tsconfig')
 
 module.exports = {
   transform: {
-    '\\.tsx?$': '<rootDir>/jest/ts-jest.js',
+    '\\.tsx?$': 'ts-jest',
   },
   testMatch: ['**/(__test__|src)/**/*.test.ts?(x)'],
-  coveragePathIgnorePatterns: [
-    '/node_modules/',
-    '/jest/',
-    '__test__',
-    '<rootDir>/src/themes',
-    '<rootDir>/src/styled.ts',
-  ],
   coverageProvider: 'v8',
   setupFilesAfterEnv: ['<rootDir>/jest/setup.ts'],
   moduleFileExtensions: [

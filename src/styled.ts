@@ -1,11 +1,9 @@
 // This file reexports styled components so that
 import * as styledComponents from 'styled-components'
+import { theme } from './themes'
 
-import { ColorOptions } from './themes/colors'
-import ThemeInterface, {
-  FontSizeOptions,
-  FontWeightOptions,
-} from './themes/ThemeInterface'
+type ThemeInterface = typeof theme
+type ColorOptions = keyof ThemeInterface['colors']
 
 const {
   default: styled,
@@ -56,9 +54,3 @@ type StyledFunction<T> = (
 
 export const color: StyledFunction<ColorOptions> = (name) => (p) =>
   p.theme.colors[name]
-
-export const fontSize: StyledFunction<FontSizeOptions> = (name) => (p) =>
-  p.theme[name]
-
-export const fontWeight: StyledFunction<FontWeightOptions> = (name) => (p) =>
-  p.theme[name]

@@ -2,8 +2,6 @@ import React, { FunctionComponent } from 'react'
 
 import styled, { color, css } from '../styled'
 
-// TODO: Add Tests
-
 type Props = {
   disabled?: boolean
   value?: boolean
@@ -36,15 +34,15 @@ const ToggleContainer = styled(Box)<{ disabled?: boolean }>`
   width: 60px;
   height: 20px;
   border-radius: 50px;
-  border: 1px solid ${color('n2')};
+  border: 1px solid ${color('black')};
   ${(p) =>
       p.disabled
         ? css`
-            background: ${color('n1')};
+            background: ${color('gray')};
             opacity: 0.6;
           `
         : css`
-            background: ${color('n2')};
+            background: ${color('white')};
           `}
     :hover {
     cursor: pointer;
@@ -59,17 +57,17 @@ const StyledToggle = styled('div')<{ value: boolean; disabled?: boolean }>`
   ${(p) => {
     if (p.disabled) {
       return css`
-        background: ${color('n2')};
+        background: ${color('gray')};
         transform: translateX(4px);
       `
     } else {
       return p.value
         ? css`
-            background: ${color('g5')};
+            background: ${color('black')};
             transform: translateX(40px);
           `
         : css`
-            background: ${color('n3')};
+            background: ${color('gray')};
             transform: translateX(4px);
           `
     }
