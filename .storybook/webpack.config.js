@@ -1,5 +1,3 @@
-const webpack = require('webpack')
-
 module.exports = ({ config }) => {
   const oldRules = config.module.rules
   config.module.rules = [

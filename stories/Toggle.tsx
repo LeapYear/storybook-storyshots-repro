@@ -9,6 +9,6 @@ export default {
 export const basic = () => (
   <>
     <div>Normal Toggle</div>
-    <Toggle value={true} onClick={() => {}} />
+    <Toggle value={true} />
   </>
 )
