@@ -1,13 +1,8 @@
-const jest = require('ts-jest/utils')
-
-const tsconfig = require('./tsconfig')
-
 module.exports = {
   transform: {
     '\\.tsx?$': 'ts-jest',
   },
   testMatch: ['**/(__test__|src)/**/*.test.ts?(x)'],
-  coverageProvider: 'v8',
   setupFilesAfterEnv: ['<rootDir>/jest/setup.ts'],
   moduleFileExtensions: [
     'ts',
@@ -17,11 +12,6 @@ module.exports = {
     // https://github.com/storybookjs/storybook/tree/master/addons/storyshots/storyshots-core#configure-your-app-for-jest
     'json',
   ],
-  moduleNameMapper: {
-    // Storyshots imports CSS files
-    // https://github.com/facebook/jest/issues/3094#issuecomment-284867098
-    '\\.css$': 'identity-obj-proxy',
-  },
   globals: {
     'ts-jest': {
       tsConfig: {

@@ -5,8 +5,6 @@ module.exports = ({ config }) => {
       test: /\.tsx?$/,
       use: ['ts-loader'],
     },
-    // css loader
-    oldRules[2],
   ]
 
   config.resolve.extensions.push('.ts', '.tsx')
