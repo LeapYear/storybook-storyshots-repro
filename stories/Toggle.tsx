@@ -5,5 +5,5 @@ export default {
 }
 
 export const basic = () => (
-  <div>Toggle Story</div>
+  <>Toggle Story</>
 )

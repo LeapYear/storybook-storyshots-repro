@@ -1,7 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Toggle Basic 1`] = `
-<div>
-  Toggle Story
-</div>
-`;
+exports[`Storyshots Toggle Basic 1`] = `"Toggle Story"`;
